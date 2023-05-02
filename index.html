@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unit Converter</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Unit Convertor</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Length Conversion</h2>
+                <form>
+                    <label for="length">Length:</label>
+                    <input type="number" id="length" name="length">
+                    <select id="lengthUnitFrom" name="lengthUnitFrom">
+                        <option value="meters">Meters</option>
+                        <option value="feet">Feet</option>
+                        <option value="inches">Inches</option>
+                    </select>
+                    <select id="lengthUnitTo" name="lengthUnitTo">
+                        <option value="kilometers">KiloMeters</option>
+                        <option value="feet">Feet</option>
+                        <option value="inches">Inches</option>
+                    </select>
+                    <button type="button" onclick="convertLength()">Convert</button>
+                </form>
+                <p id="lengthResult"></p>
+            </section>
+            <section>
+                <h2>Area Conversion</h2>
+                <form>
+                    <label for="area">Area:</label>
+                    <input type="number" id="area" name="area">
+                    <select id="areaUnitFrom" name="areaUnitFrom">
+                        <option value="squaremeters">Square Meters</option>
+                        <option value="squarefeet">Square Feet</option>
+                        <option value="squareinches">Square Inches</option>
+                    </select>
+                    <select id="areaUnitTo" name="areaUnitTo">
+                        <option value="squaremeters">Square Meters</option>
+                        <option value="squarefeet">Square Feet</option>
+                        <option value="squareinches">Square Inches</option>
+                    </select>
+                    <button type="button" onclick="convertArea()">Convert</button>
+                </form>
+                <p id="areaResult"></p>
+            </section>
+            <section>
+                <h2>Weight Conversion</h2>
+                <form>
+                    <label for="weight">Weight:</label>
+                    <input type="number" id="weight" name="weight">
+                    <select id="weightUnitFrom" name="weightUnitFrom">
+                        <option value="kilograms">Kilograms</option>
+                        <option value="pounds">Pounds</option>
+                        <option value="ounces">Ounces</option>
+                    </select>
+                    <select id="weightUnitTo" name="weightUnitTo">
+                        <option value="kilograms">Kilograms</option>
+                        <option value="pounds">Pounds</option>
+                        <option value="ounces">Ounces</option>
+                    </select>
+                    <button type="button" onclick="convertWeight()">Convert</button>
+                </form>
+                <p id="weightResult"></p>
+            </section>
+            <section>
+                <h2>Temperature Conversion</h2>
+                <form>
+                    <label for="temperature">Temperature:</label>
+                    <input type="number" id="temperature" name="temperature">
+                    <select id="temperatureUnitFrom" name="temperatureUnitFrom">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                    <select id="temperatureUnitTo" name="temperatureUnitTo">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                    <button type="button" onclick="convertTemperature()">Convert</button>
+                </form>
+                <p id="temperatureResult"></p>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
